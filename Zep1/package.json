@@ -1,0 +1,17 @@
+{
+  "name": "zeptest1",
+  "version": "1.0.0",
+  "description": "Test",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "zeppelin-solidity": "^1.4.0"
+  }
+}
