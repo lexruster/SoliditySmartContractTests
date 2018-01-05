@@ -1,0 +1,39 @@
+(0) 0xd10fa6608e74d84c00726c7f01e3f7757ff99aca
+(1) 0xfe6528ecf0e970e75e5e5b887944b680e81252ed
+(2) 0x46dcc2bae7a4c68e770a80f19e663c2e070a4d0f
+
+> (web3.eth.accounts[0])
+"0xd10fa6608e74d84c00726c7f01e3f7757ff99aca"
+> (web3.eth.accounts[1])
+"0xfe6528ecf0e970e75e5e5b887944b680e81252ed"
+> (web3.eth.accounts[2])
+"0x46dcc2bae7a4c68e770a80f19e663c2e070a4d0f"
+
+
+ web3.eth.sendTransaction({from:web3.eth.accounts[1], to:"0x68bba649ac85d435eee4e5cdfb471ce34e7838c7", value: web3.toWei(5, "ether")});
+
+ web3.eth.sendTransaction({from:web3.eth.accounts[1], to:sale.address, value: web3.toWei(5, "ether")});
+
+
+truffle(development)> sale.address
+'0x1a861be1f38e10c5e47a1baa30a3b79eed693675'
+
+truffle(development)> token.address
+'0x93910a4a36730109619f657c04209790f1aedfc5'
+
+
+ AlexCrowdsale.deployed().then(inst => inst.sendTransaction({ from: account1, value: web3.toWei(7, "ether")}))
+
+ var sale = AlexCrowdsale.at(AlexCrowdsale.address);
+ var token = SampleCrowdsaleToken.at('0xd9f0a9b4d14416b10dc696f339820e7dfa0622e7');
+
+ token.balanceOf(web3.eth.accounts[1]).then(bal=>web3.fromWei(bal.toString(10), "ether"))
+ 
+ -----------
+ rinkeby
+ contract
+ 0x9A5a5C4C75f9d8883f40c97E6b2b44EC21C6F581
+ token
+ 0xd9f0a9b4d14416b10dc696f339820e7dfa0622e7
+
+ 0xD9f0a9b4D14416b10dc696f339820E7dFA0622E7 
