@@ -1,7 +1,9 @@
-pragma solidity ^0.4.4;
+pragma solidity ^0.4.13;
 
-contract AlexCoin {
-  function AlexCoin() {
-    // constructor
-  }
+import 'zeppelin-solidity/contracts/token/MintableToken.sol';
+
+contract AlexCoin is MintableToken {
+  string public name = "ALEX COIN";
+  string public symbol = "ACO";
+  uint256 public decimals = 18;
 }
