@@ -28,7 +28,7 @@ truffle(development)> token.address
  var token = SampleCrowdsaleToken.at('0xd9f0a9b4d14416b10dc696f339820e7dfa0622e7');
 
  token.balanceOf(web3.eth.accounts[1]).then(bal=>web3.fromWei(bal.toString(10), "ether"))
- 
+
  -----------
  rinkeby
  contract
@@ -37,3 +37,6 @@ truffle(development)> token.address
  0xd9f0a9b4d14416b10dc696f339820e7dfa0622e7
 
  0xD9f0a9b4D14416b10dc696f339820E7dFA0622E7 
+
+ ---------
+ it('Change Admin by other user', function () { return myContract.changeAdmin(accounts[0], {from: accounts[1]}).then(function (ret) { }).catch(function () { return myContract.admin() }).then(function (aAddrress) { assert.equal(aAddrress, adminAddress, adminAddress + ' Does not match current admin') }) })
