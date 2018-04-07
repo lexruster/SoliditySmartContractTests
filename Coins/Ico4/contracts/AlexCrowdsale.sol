@@ -1,7 +1,7 @@
 pragma solidity ^0.4.18;
 
-import 'zeppelin-solidity/contracts/crowdsale/CappedCrowdsale.sol';
-import 'zeppelin-solidity/contracts/token/MintableToken.sol';
+import './crowdsale/CappedCrowdsale.sol';
+import './token/MintableToken.sol';
 
 contract SampleCrowdsaleToken is MintableToken {
 
